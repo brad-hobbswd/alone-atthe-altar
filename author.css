@@ -1,0 +1,2378 @@
+/* =========================================================
+   ALONE AT THE ALTAR
+   AUTHOR PAGE STYLESHEET
+
+   File: author.css
+   Author: Bradley Hobbs
+========================================================= */
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+
+    --ivory: #f7f0e6;
+    --ivory-deep: #ece1d2;
+
+    --paper: #fffdf9;
+    --paper-soft: #faf6f0;
+
+    --navy: #17212d;
+    --navy-soft: #223141;
+    --navy-light: #314456;
+
+    --gold: #b99558;
+    --gold-light: #d4b77e;
+    --gold-soft: #e8d9bb;
+
+    --ink: #252525;
+    --muted: #716b64;
+
+    --white: #ffffff;
+
+    --border: rgba(23, 33, 45, 0.12);
+
+    --shadow-soft:
+        0 20px 60px rgba(23, 33, 45, 0.08);
+
+    --shadow-deep:
+        0 30px 80px rgba(0, 0, 0, 0.18);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    background:
+        var(--paper);
+
+    color:
+        var(--ink);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    line-height:
+        1.7;
+
+}
+
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+
+a {
+
+    color:
+        inherit;
+
+    text-decoration:
+        none;
+
+}
+
+
+button {
+
+    font:
+        inherit;
+
+}
+
+
+/* =========================================================
+   SHARED
+========================================================= */
+
+.section-shell {
+
+    width:
+        min(1180px, calc(100% - 64px));
+
+    margin:
+        0 auto;
+
+}
+
+
+.eyebrow {
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        20px;
+
+    color:
+        var(--gold);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.22em;
+
+    line-height:
+        1.4;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.section-heading {
+
+    margin-bottom:
+        70px;
+
+}
+
+
+.section-heading.centered {
+
+    max-width:
+        760px;
+
+    margin:
+        0 auto 70px;
+
+    text-align:
+        center;
+
+}
+
+
+.section-heading h2 {
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3rem, 5vw, 5rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.98;
+
+    letter-spacing:
+        -0.035em;
+
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        54px;
+
+    padding:
+        15px 28px;
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.1em;
+
+    text-transform:
+        uppercase;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+
+}
+
+
+.button:hover {
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.button-gold {
+
+    background:
+        var(--gold);
+
+    color:
+        var(--white);
+
+    border:
+        1px solid var(--gold);
+
+}
+
+
+.button-gold:hover {
+
+    background:
+        var(--navy);
+
+    border-color:
+        var(--navy);
+
+}
+
+
+.button-outline {
+
+    background:
+        transparent;
+
+    color:
+        var(--navy);
+
+    border:
+        1px solid rgba(23, 33, 45, 0.35);
+
+}
+
+
+.button-outline:hover {
+
+    background:
+        var(--navy);
+
+    color:
+        var(--white);
+
+    border-color:
+        var(--navy);
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    position:
+        relative;
+
+    z-index:
+        100;
+
+    background:
+        var(--paper);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.header-inner {
+
+    width:
+        min(1400px, calc(100% - 56px));
+
+    min-height:
+        92px;
+
+    margin:
+        0 auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        34px;
+
+}
+
+
+.site-brand {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    flex-shrink:
+        0;
+
+    line-height:
+        1;
+
+}
+
+
+.brand-title {
+
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        6px;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.55rem;
+
+    font-weight:
+        500;
+
+}
+
+
+.brand-title small {
+
+    font-size:
+        0.58em;
+
+    font-style:
+        italic;
+
+    font-weight:
+        400;
+
+}
+
+
+.brand-title strong {
+
+    font-weight:
+        600;
+
+}
+
+
+.brand-subtitle {
+
+    max-width:
+        260px;
+
+    margin-top:
+        7px;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.52rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.07em;
+
+    line-height:
+        1.45;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.site-navigation {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        25px;
+
+    margin-left:
+        auto;
+
+}
+
+
+.site-navigation a {
+
+    position:
+        relative;
+
+    padding:
+        35px 0;
+
+    color:
+        var(--navy);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.site-navigation a::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    right:
+        0;
+
+    bottom:
+        25px;
+
+    left:
+        0;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+    transform:
+        scaleX(0);
+
+    transform-origin:
+        center;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.site-navigation a:hover::after,
+.site-navigation a.active::after {
+
+    transform:
+        scaleX(1);
+
+}
+
+
+.site-navigation a.active {
+
+    color:
+        var(--gold);
+
+}
+
+
+.header-button {
+
+    flex-shrink:
+        0;
+
+    padding:
+        13px 20px;
+
+    background:
+        var(--navy);
+
+    color:
+        var(--white);
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.09em;
+
+    text-transform:
+        uppercase;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.header-button:hover {
+
+    background:
+        var(--gold);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-button {
+
+    display:
+        none;
+
+    width:
+        46px;
+
+    height:
+        46px;
+
+    padding:
+        0;
+
+    margin-left:
+        auto;
+
+    background:
+        transparent;
+
+    border:
+        1px solid var(--border);
+
+    cursor:
+        pointer;
+
+}
+
+
+.mobile-menu-button span {
+
+    display:
+        block;
+
+    width:
+        20px;
+
+    height:
+        1px;
+
+    margin:
+        5px auto;
+
+    background:
+        var(--navy);
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+
+}
+
+
+.mobile-menu-button.open span:nth-child(1) {
+
+    transform:
+        translateY(6px)
+        rotate(45deg);
+
+}
+
+
+.mobile-menu-button.open span:nth-child(2) {
+
+    opacity:
+        0;
+
+}
+
+
+.mobile-menu-button.open span:nth-child(3) {
+
+    transform:
+        translateY(-6px)
+        rotate(-45deg);
+
+}
+
+
+/* =========================================================
+   AUTHOR HERO
+========================================================= */
+
+.author-hero {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    min-height:
+        610px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        120px 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--navy),
+            #0d151d
+        );
+
+    text-align:
+        center;
+
+}
+
+
+.author-hero::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        680px;
+
+    height:
+        680px;
+
+    border:
+        1px solid rgba(212, 183, 126, 0.16);
+
+    border-radius:
+        50%;
+
+    top:
+        -320px;
+
+    left:
+        -220px;
+
+}
+
+
+.author-hero::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        560px;
+
+    height:
+        560px;
+
+    border:
+        1px solid rgba(212, 183, 126, 0.1);
+
+    border-radius:
+        50%;
+
+    right:
+        -180px;
+
+    bottom:
+        -260px;
+
+}
+
+
+.author-hero-inner {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+
+    width:
+        min(820px, 100%);
+
+}
+
+
+.author-hero .eyebrow {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+.author-hero h1 {
+
+    margin:
+        0;
+
+    color:
+        var(--white);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(4.5rem, 9vw, 8.5rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.9;
+
+    letter-spacing:
+        -0.045em;
+
+}
+
+
+.hero-line {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    margin:
+        34px 0;
+
+}
+
+
+.hero-line span {
+
+    width:
+        65px;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+}
+
+
+.author-hero-intro {
+
+    margin:
+        0;
+
+    color:
+        var(--gold-soft);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(1.8rem, 3vw, 2.7rem);
+
+    font-style:
+        italic;
+
+    line-height:
+        1.2;
+
+}
+
+
+.author-hero-description {
+
+    max-width:
+        620px;
+
+    margin:
+        28px auto 0;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size:
+        1rem;
+
+}
+
+
+/* =========================================================
+   AUTHOR INTRODUCTION
+========================================================= */
+
+.author-introduction {
+
+    padding:
+        150px 0;
+
+    background:
+        var(--paper);
+
+}
+
+
+.author-introduction-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    gap:
+        120px;
+
+    align-items:
+        start;
+
+}
+
+
+.author-introduction-title {
+
+    position:
+        sticky;
+
+    top:
+        40px;
+
+}
+
+
+.author-introduction-title h2 {
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3.2rem, 5vw, 5.4rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.98;
+
+    letter-spacing:
+        -0.04em;
+
+}
+
+
+.author-introduction-content {
+
+    max-width:
+        620px;
+
+    padding-top:
+        35px;
+
+}
+
+
+.author-introduction-content p {
+
+    margin:
+        0 0 30px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.04rem;
+
+}
+
+
+.author-introduction-content p:first-child {
+
+    color:
+        var(--ink);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.65rem;
+
+    line-height:
+        1.45;
+
+}
+
+
+/* =========================================================
+   WHAT MATTERS
+========================================================= */
+
+.matters-section {
+
+    padding:
+        140px 0;
+
+    background:
+        var(--ivory);
+
+}
+
+
+.matters-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top:
+        1px solid var(--border);
+
+    border-left:
+        1px solid var(--border);
+
+}
+
+
+.matter-card {
+
+    min-height:
+        340px;
+
+    padding:
+        42px 34px;
+
+    border-right:
+        1px solid var(--border);
+
+    border-bottom:
+        1px solid var(--border);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.matter-card:hover {
+
+    background:
+        var(--paper);
+
+    transform:
+        translateY(-5px);
+
+}
+
+
+.matter-number {
+
+    display:
+        block;
+
+    margin-bottom:
+        70px;
+
+    color:
+        var(--gold);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.15em;
+
+}
+
+
+.matter-card h3 {
+
+    margin:
+        0 0 16px;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        2.3rem;
+
+    font-weight:
+        500;
+
+    line-height:
+        1;
+
+}
+
+
+.matter-card p {
+
+    margin:
+        0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        0.91rem;
+
+    line-height:
+        1.75;
+
+}
+
+
+/* =========================================================
+   WHY I WRITE
+========================================================= */
+
+.why-write-section {
+
+    position:
+        relative;
+
+    padding:
+        160px 30px;
+
+    overflow:
+        hidden;
+
+    background:
+        var(--navy);
+
+    text-align:
+        center;
+
+}
+
+
+.why-write-section::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        40px;
+
+    border:
+        1px solid rgba(212, 183, 126, 0.12);
+
+    pointer-events:
+        none;
+
+}
+
+
+.why-write-inner {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+
+    max-width:
+        850px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.why-write-inner .eyebrow {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+.why-write-inner h2 {
+
+    margin:
+        0;
+
+    color:
+        var(--white);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3.4rem, 6vw, 6.4rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.95;
+
+    letter-spacing:
+        -0.04em;
+
+}
+
+
+.why-write-line {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    margin:
+        45px 0;
+
+}
+
+
+.why-write-line span {
+
+    width:
+        65px;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+}
+
+
+.why-write-inner p {
+
+    max-width:
+        670px;
+
+    margin:
+        0 auto 24px;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    font-size:
+        1rem;
+
+}
+
+
+/* =========================================================
+   NOTE TO THE READER
+========================================================= */
+
+.reader-note {
+
+    padding:
+        150px 0;
+
+    background:
+        var(--paper-soft);
+
+}
+
+
+.reader-note-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        240px
+        minmax(0, 1fr);
+
+    gap:
+        110px;
+
+    align-items:
+        start;
+
+}
+
+
+.reader-note-mark {
+
+    display:
+        flex;
+
+    justify-content:
+        flex-start;
+
+    padding-top:
+        10px;
+
+}
+
+
+.reader-note-mark span {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.6rem;
+
+    font-style:
+        italic;
+
+    writing-mode:
+        vertical-rl;
+
+    transform:
+        rotate(180deg);
+
+}
+
+
+.reader-note-content {
+
+    max-width:
+        680px;
+
+}
+
+
+.reader-note-content h2 {
+
+    margin:
+        0 0 45px;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3rem, 5vw, 5rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.98;
+
+    letter-spacing:
+        -0.04em;
+
+}
+
+
+.reader-note-content p {
+
+    margin:
+        0 0 26px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.02rem;
+
+}
+
+
+/* =========================================================
+   AUTHOR BOOK SECTION
+========================================================= */
+
+.author-book-section {
+
+    position:
+        relative;
+
+    padding:
+        150px 30px;
+
+    overflow:
+        hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ivory-deep),
+            var(--ivory)
+        );
+
+    text-align:
+        center;
+
+}
+
+
+.author-book-section::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        550px;
+
+    height:
+        550px;
+
+    border:
+        1px solid rgba(185, 149, 88, 0.22);
+
+    border-radius:
+        50%;
+
+    top:
+        -300px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+}
+
+
+.author-book-inner {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+
+    max-width:
+        760px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.author-book-inner h2 {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(4.5rem, 8vw, 7.5rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.76;
+
+    letter-spacing:
+        -0.05em;
+
+}
+
+
+.author-book-inner h2 small {
+
+    margin:
+        12px 0;
+
+    font-size:
+        0.3em;
+
+    font-style:
+        italic;
+
+    font-weight:
+        400;
+
+    line-height:
+        1;
+
+}
+
+
+.author-book-subtitle {
+
+    margin:
+        38px 0 24px;
+
+    color:
+        var(--gold);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.8rem;
+
+    font-style:
+        italic;
+
+    line-height:
+        1.2;
+
+}
+
+
+.author-book-inner > p:last-of-type {
+
+    max-width:
+        540px;
+
+    margin:
+        0 auto;
+
+    color:
+        var(--muted);
+
+}
+
+
+.author-book-actions {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    justify-content:
+        center;
+
+    gap:
+        14px;
+
+    margin-top:
+        40px;
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+
+    background:
+        var(--navy);
+
+    color:
+        var(--white);
+
+}
+
+
+.footer-main {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.2fr
+        1fr
+        0.8fr;
+
+    gap:
+        80px;
+
+    padding:
+        85px 0;
+
+    align-items:
+        start;
+
+}
+
+
+.footer-title {
+
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        7px;
+
+    color:
+        var(--white);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        2.1rem;
+
+    line-height:
+        1;
+
+}
+
+
+.footer-title small {
+
+    font-size:
+        0.5em;
+
+    font-style:
+        italic;
+
+}
+
+
+.footer-brand p {
+
+    max-width:
+        250px;
+
+    margin:
+        20px 0 0;
+
+    color:
+        rgba(255, 255, 255, 0.55);
+
+    font-size:
+        0.78rem;
+
+    line-height:
+        1.7;
+
+}
+
+
+.footer-navigation {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, max-content);
+
+    gap:
+        14px 40px;
+
+}
+
+
+.footer-navigation a {
+
+    color:
+        rgba(255, 255, 255, 0.7);
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        0.08em;
+
+    text-transform:
+        uppercase;
+
+    transition:
+        color 0.2s ease;
+
+}
+
+
+.footer-navigation a:hover {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+.footer-scripture {
+
+    text-align:
+        right;
+
+}
+
+
+.footer-scripture p {
+
+    margin:
+        0 0 10px;
+
+    color:
+        var(--gold-soft);
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        1.25rem;
+
+    font-style:
+        italic;
+
+    line-height:
+        1.35;
+
+}
+
+
+.footer-scripture span {
+
+    color:
+        rgba(255, 255, 255, 0.45);
+
+    font-size:
+        0.65rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.14em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.footer-bottom {
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+
+.footer-bottom-inner {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    padding:
+        26px 0;
+
+}
+
+
+.footer-bottom p {
+
+    margin:
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.4);
+
+    font-size:
+        0.68rem;
+
+}
+
+
+.legal-links {
+
+    display:
+        flex;
+
+    gap:
+        24px;
+
+}
+
+
+.legal-links a {
+
+    color:
+        rgba(255, 255, 255, 0.5);
+
+    font-size:
+        0.67rem;
+
+    transition:
+        color 0.2s ease;
+
+}
+
+
+.legal-links a:hover {
+
+    color:
+        var(--gold-light);
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+
+    .header-inner {
+
+        gap:
+            22px;
+
+    }
+
+
+    .site-navigation {
+
+        gap:
+            18px;
+
+    }
+
+
+    .site-navigation a {
+
+        font-size:
+            0.65rem;
+
+    }
+
+
+    .matters-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .matter-card {
+
+        min-height:
+            300px;
+
+    }
+
+
+    .footer-main {
+
+        grid-template-columns:
+            1fr
+            1fr;
+
+    }
+
+
+    .footer-scripture {
+
+        text-align:
+            left;
+
+    }
+
+
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+
+    .header-inner {
+
+        min-height:
+            78px;
+
+        width:
+            min(100% - 36px, 1400px);
+
+        position:
+            relative;
+
+    }
+
+
+    .mobile-menu-button {
+
+        display:
+            block;
+
+    }
+
+
+    .site-navigation {
+
+        position:
+            absolute;
+
+        top:
+            calc(100% + 1px);
+
+        right:
+            0;
+
+        left:
+            0;
+
+        display:
+            none;
+
+        padding:
+            16px 24px 24px;
+
+        background:
+            var(--paper);
+
+        border-bottom:
+            1px solid var(--border);
+
+        box-shadow:
+            var(--shadow-soft);
+
+    }
+
+
+    .site-navigation.open {
+
+        display:
+            flex;
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap:
+            0;
+
+    }
+
+
+    .site-navigation a {
+
+        padding:
+            16px 0;
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+
+    .site-navigation a::after {
+
+        display:
+            none;
+
+    }
+
+
+    .header-button {
+
+        display:
+            none;
+
+    }
+
+
+    .author-introduction {
+
+        padding:
+            100px 0;
+
+    }
+
+
+    .author-introduction-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            60px;
+
+    }
+
+
+    .author-introduction-title {
+
+        position:
+            static;
+
+    }
+
+
+    .author-introduction-content {
+
+        padding-top:
+            0;
+
+    }
+
+
+    .reader-note {
+
+        padding:
+            100px 0;
+
+    }
+
+
+    .reader-note-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            40px;
+
+    }
+
+
+    .reader-note-mark {
+
+        padding:
+            0;
+
+    }
+
+
+    .reader-note-mark span {
+
+        writing-mode:
+            horizontal-tb;
+
+        transform:
+            none;
+
+    }
+
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media screen and (max-width: 700px) {
+
+
+    .section-shell {
+
+        width:
+            min(100% - 40px, 1180px);
+
+    }
+
+
+    .author-hero {
+
+        min-height:
+            530px;
+
+        padding:
+            100px 20px;
+
+    }
+
+
+    .author-introduction {
+
+        padding:
+            85px 0;
+
+    }
+
+
+    .matters-section {
+
+        padding:
+            90px 0;
+
+    }
+
+
+    .matters-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .matter-card {
+
+        min-height:
+            auto;
+
+    }
+
+
+    .matter-number {
+
+        margin-bottom:
+            40px;
+
+    }
+
+
+    .why-write-section {
+
+        padding:
+            110px 20px;
+
+    }
+
+
+    .why-write-section::before {
+
+        inset:
+            18px;
+
+    }
+
+
+    .reader-note {
+
+        padding:
+            85px 0;
+
+    }
+
+
+    .author-book-section {
+
+        padding:
+            100px 20px;
+
+    }
+
+
+    .footer-main {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            50px;
+
+        padding:
+            65px 0;
+
+    }
+
+
+    .footer-bottom-inner {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            16px;
+
+    }
+
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+
+    .brand-title {
+
+        font-size:
+            1.35rem;
+
+    }
+
+
+    .brand-subtitle {
+
+        max-width:
+            180px;
+
+        font-size:
+            0.45rem;
+
+    }
+
+
+    .author-hero h1 {
+
+        font-size:
+            4.2rem;
+
+    }
+
+
+    .author-hero-intro {
+
+        font-size:
+            1.65rem;
+
+    }
+
+
+    .author-hero-description {
+
+        font-size:
+            0.9rem;
+
+    }
+
+
+    .section-heading {
+
+        margin-bottom:
+            50px;
+
+    }
+
+
+    .author-introduction-title h2 {
+
+        font-size:
+            3.3rem;
+
+    }
+
+
+    .author-introduction-content p:first-child {
+
+        font-size:
+            1.45rem;
+
+    }
+
+
+    .why-write-inner h2 {
+
+        font-size:
+            3.35rem;
+
+    }
+
+
+    .reader-note-content h2 {
+
+        font-size:
+            3.2rem;
+
+    }
+
+
+    .author-book-inner h2 {
+
+        font-size:
+            4.8rem;
+
+    }
+
+
+    .author-book-subtitle {
+
+        font-size:
+            1.45rem;
+
+    }
+
+
+    .author-book-actions {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+    }
+
+
+    .author-book-actions .button {
+
+        width:
+            100%;
+
+    }
+
+
+    .footer-navigation {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            16px;
+
+    }
+
+
+    .legal-links {
+
+        flex-wrap:
+            wrap;
+
+        gap:
+            14px 20px;
+
+    }
+
+
+}
