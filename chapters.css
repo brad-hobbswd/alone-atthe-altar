@@ -1,0 +1,1497 @@
+/* =========================================================
+ALONE AT THE ALTAR
+
+CHAPTERS PAGE
+
+Author: Bradley Hobbs
+
+========================================================= */
+
+
+:root {
+
+    --navy:
+        #102033;
+
+    --navy-deep:
+        #081421;
+
+    --gold:
+        #a97932;
+
+    --gold-light:
+        #d0a966;
+
+    --cream:
+        #f7f3ea;
+
+    --ivory:
+        #fffdf8;
+
+    --ink:
+        #243344;
+
+    --muted:
+        #6e6b66;
+
+    --line:
+        rgba(16, 32, 51, 0.14);
+
+}
+
+
+* {
+
+    box-sizing:
+        border-box;
+
+}
+
+
+html {
+
+    scroll-behavior:
+        smooth;
+
+}
+
+
+body {
+
+    margin:
+        0;
+
+    background:
+        var(--ivory);
+
+    color:
+        var(--ink);
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+}
+
+
+a {
+
+    color:
+        inherit;
+
+    text-decoration:
+        none;
+
+}
+
+
+.section-shell {
+
+    width:
+        min(1400px, calc(100% - 48px));
+
+    margin:
+        0 auto;
+
+}
+
+
+.eyebrow {
+
+    display:
+        block;
+
+    margin-bottom:
+        18px;
+
+    color:
+        var(--gold);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.22em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/* =========================================================
+HEADER
+========================================================= */
+
+
+.site-header {
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        1000;
+
+    background:
+        rgba(255, 253, 248, 0.97);
+
+    border-bottom:
+        1px solid
+        rgba(16, 32, 51, 0.08);
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.header-inner {
+
+    width:
+        min(1500px, calc(100% - 48px));
+
+    min-height:
+        88px;
+
+    margin:
+        0 auto;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        28px;
+
+}
+
+
+.site-brand {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    flex-shrink:
+        0;
+
+}
+
+
+.brand-title {
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        1.7rem;
+
+    font-weight:
+        600;
+
+    line-height:
+        1;
+
+}
+
+
+.brand-title small {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        0.9rem;
+
+}
+
+
+.brand-title strong {
+
+    color:
+        var(--gold);
+
+}
+
+
+.brand-subtitle {
+
+    margin-top:
+        5px;
+
+    color:
+        var(--muted);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.44rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.13em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.site-navigation {
+
+    display:
+        flex;
+
+    gap:
+        24px;
+
+    margin-left:
+        auto;
+
+}
+
+
+.site-navigation a {
+
+    position:
+        relative;
+
+    padding:
+        8px 0;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.78rem;
+
+}
+
+
+.site-navigation a::after {
+
+    position:
+        absolute;
+
+    right:
+        0;
+
+    bottom:
+        0;
+
+    left:
+        0;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+    content:
+        "";
+
+    transform:
+        scaleX(0);
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.site-navigation a.active::after,
+.site-navigation a:hover::after {
+
+    transform:
+        scaleX(1);
+
+}
+
+
+.header-button {
+
+    padding:
+        13px 22px;
+
+    background:
+        var(--gold);
+
+    color:
+        #ffffff;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.7rem;
+
+    font-weight:
+        700;
+
+}
+
+
+.mobile-menu-button {
+
+    display:
+        none;
+
+}
+
+
+/* =========================================================
+CHAPTER HERO
+========================================================= */
+
+
+.chapters-hero {
+
+    padding:
+        150px 24px 140px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eee4d5,
+            #fffdf8 55%,
+            #e9ddcc
+        );
+
+    text-align:
+        center;
+
+}
+
+
+.chapters-hero-inner {
+
+    width:
+        min(900px, 100%);
+
+    margin:
+        0 auto;
+
+}
+
+
+.chapters-hero h1 {
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(4rem, 9vw, 8rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.9;
+
+}
+
+
+.hero-divider {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    margin:
+        35px 0;
+
+}
+
+
+.hero-divider span {
+
+    display:
+        block;
+
+    width:
+        110px;
+
+    height:
+        1px;
+
+    background:
+        var(--gold);
+
+}
+
+
+.hero-subtitle {
+
+    margin:
+        0;
+
+    color:
+        var(--ink);
+
+    font-size:
+        clamp(1.5rem, 3vw, 2.3rem);
+
+    font-style:
+        italic;
+
+    line-height:
+        1.3;
+
+}
+
+
+.hero-description {
+
+    max-width:
+        620px;
+
+    margin:
+        26px auto 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.25rem;
+
+    line-height:
+        1.5;
+
+}
+
+
+/* =========================================================
+READING INTRO
+========================================================= */
+
+
+.reading-intro {
+
+    padding:
+        120px 24px;
+
+    background:
+        var(--ivory);
+
+}
+
+
+.reading-intro-inner {
+
+    width:
+        min(760px, 100%);
+
+    margin:
+        0 auto;
+
+    text-align:
+        center;
+
+}
+
+
+.reading-intro h2 {
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-size:
+        clamp(3.2rem, 6vw, 5.8rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.9;
+
+}
+
+
+.reading-intro p {
+
+    max-width:
+        620px;
+
+    margin:
+        25px auto 0;
+
+    font-size:
+        1.35rem;
+
+    line-height:
+        1.55;
+
+}
+
+
+.begin-reading-button {
+
+    width:
+        100%;
+
+    max-width:
+        620px;
+
+    margin:
+        45px auto 0;
+
+    padding:
+        23px 28px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    border:
+        1px solid
+        rgba(16, 32, 51, 0.15);
+
+    color:
+        var(--navy);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+
+}
+
+
+.begin-reading-button:hover {
+
+    background:
+        var(--cream);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.begin-reading-button span {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        700;
+
+}
+
+
+.begin-reading-button strong {
+
+    color:
+        var(--gold);
+
+    font-size:
+        1.8rem;
+
+}
+
+
+/* =========================================================
+TABLE OF CONTENTS
+========================================================= */
+
+
+.contents-section {
+
+    padding:
+        120px 24px;
+
+    background:
+        var(--cream);
+
+}
+
+
+.contents-shell {
+
+    width:
+        min(1000px, 100%);
+
+    margin:
+        0 auto;
+
+}
+
+
+.contents-header {
+
+    margin-bottom:
+        60px;
+
+    text-align:
+        center;
+
+}
+
+
+.contents-header h2 {
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-size:
+        clamp(3.2rem, 6vw, 5.8rem);
+
+    font-weight:
+        500;
+
+}
+
+
+.contents-header p {
+
+    margin:
+        18px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.25rem;
+
+}
+
+
+.contents-list {
+
+    border-top:
+        1px solid var(--line);
+
+}
+
+
+.contents-item {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        70px
+        1fr
+        40px;
+
+    align-items:
+        center;
+
+    gap:
+        25px;
+
+    min-height:
+        125px;
+
+    padding:
+        20px 10px;
+
+    border-bottom:
+        1px solid var(--line);
+
+    transition:
+        padding 0.25s ease,
+        background 0.25s ease;
+
+}
+
+
+.contents-item:hover {
+
+    padding-right:
+        22px;
+
+    padding-left:
+        22px;
+
+    background:
+        rgba(255, 255, 255, 0.45);
+
+}
+
+
+.contents-number {
+
+    color:
+        var(--gold);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.72rem;
+
+    font-weight:
+        700;
+
+}
+
+
+.contents-title {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        8px;
+
+}
+
+
+.contents-title small {
+
+    color:
+        var(--muted);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.62rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.13em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.contents-title strong {
+
+    color:
+        var(--navy);
+
+    font-size:
+        clamp(1.6rem, 3vw, 2.3rem);
+
+    font-weight:
+        500;
+
+}
+
+
+.contents-arrow {
+
+    color:
+        var(--gold);
+
+    font-size:
+        1.8rem;
+
+    text-align:
+        right;
+
+}
+
+
+.introduction-item {
+
+    background:
+        rgba(255, 255, 255, 0.55);
+
+}
+
+
+/* =========================================================
+READING NOTE
+========================================================= */
+
+
+.reading-note {
+
+    padding:
+        150px 24px;
+
+    background:
+        var(--navy);
+
+    color:
+        #ffffff;
+
+}
+
+
+.reading-note-inner {
+
+    width:
+        min(850px, 100%);
+
+    margin:
+        0 auto;
+
+    text-align:
+        center;
+
+}
+
+
+.reading-note h2 {
+
+    margin:
+        0;
+
+    font-size:
+        clamp(3.5rem, 7vw, 6.8rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.9;
+
+}
+
+
+.reading-note p {
+
+    max-width:
+        650px;
+
+    margin:
+        28px auto 0;
+
+    color:
+        rgba(255, 255, 255, 0.78);
+
+    font-size:
+        1.4rem;
+
+    font-style:
+        italic;
+
+    line-height:
+        1.5;
+
+}
+
+
+/* =========================================================
+CLOSING
+========================================================= */
+
+
+.chapters-closing {
+
+    padding:
+        130px 24px;
+
+    background:
+        var(--ivory);
+
+    text-align:
+        center;
+
+}
+
+
+.chapters-closing-inner {
+
+    width:
+        min(800px, 100%);
+
+    margin:
+        0 auto;
+
+}
+
+
+.chapters-closing h2 {
+
+    margin:
+        0;
+
+    color:
+        var(--navy);
+
+    font-size:
+        clamp(3.5rem, 7vw, 6.5rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        0.9;
+
+}
+
+
+.chapters-closing p {
+
+    margin:
+        25px auto 35px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        1.35rem;
+
+}
+
+
+/* =========================================================
+BUTTON
+========================================================= */
+
+
+.button {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        54px;
+
+    padding:
+        0 30px;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.75rem;
+
+    font-weight:
+        700;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.button:hover {
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+.button-gold {
+
+    background:
+        var(--gold);
+
+    color:
+        #ffffff;
+
+}
+
+
+/* =========================================================
+FOOTER
+========================================================= */
+
+
+.site-footer {
+
+    background:
+        var(--navy-deep);
+
+    color:
+        #ffffff;
+
+}
+
+
+.footer-main {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        1fr;
+
+    align-items:
+        center;
+
+    gap:
+        40px;
+
+    padding-top:
+        52px;
+
+    padding-bottom:
+        52px;
+
+}
+
+
+.footer-title {
+
+    display:
+        block;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        2rem;
+
+}
+
+
+.footer-title small {
+
+    font-size:
+        1rem;
+
+}
+
+
+.footer-brand p {
+
+    margin:
+        8px 0 0;
+
+    color:
+        rgba(255, 255, 255, 0.6);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.58rem;
+
+    letter-spacing:
+        0.12em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+.footer-navigation {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    justify-content:
+        center;
+
+    gap:
+        18px;
+
+}
+
+
+.footer-navigation a {
+
+    color:
+        rgba(255, 255, 255, 0.78);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.72rem;
+
+}
+
+
+.footer-scripture {
+
+    text-align:
+        right;
+
+}
+
+
+.footer-scripture p {
+
+    margin:
+        0;
+
+    color:
+        rgba(255, 255, 255, 0.8);
+
+    font-style:
+        italic;
+
+}
+
+
+.footer-scripture span {
+
+    color:
+        var(--gold-light);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.65rem;
+
+}
+
+
+.footer-bottom {
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+
+}
+
+
+.footer-bottom-inner {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    min-height:
+        68px;
+
+}
+
+
+.footer-bottom p,
+.legal-links a {
+
+    color:
+        rgba(255, 255, 255, 0.58);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        0.65rem;
+
+}
+
+
+.legal-links {
+
+    display:
+        flex;
+
+    gap:
+        18px;
+
+}
+
+
+/* =========================================================
+TABLET
+========================================================= */
+
+
+@media (max-width: 1000px) {
+
+
+    .footer-main {
+
+        grid-template-columns:
+            1fr;
+
+        text-align:
+            center;
+
+    }
+
+
+    .footer-scripture {
+
+        text-align:
+            center;
+
+    }
+
+}
+
+
+/* =========================================================
+MOBILE
+========================================================= */
+
+
+@media (max-width: 800px) {
+
+
+    .section-shell {
+
+        width:
+            min(100% - 30px, 1400px);
+
+    }
+
+
+    .header-inner {
+
+        width:
+            min(100% - 30px, 1500px);
+
+        min-height:
+            74px;
+
+    }
+
+
+    .header-button {
+
+        display:
+            none;
+
+    }
+
+
+    .mobile-menu-button {
+
+        display:
+            block;
+
+        width:
+            44px;
+
+        height:
+            44px;
+
+        margin-left:
+            auto;
+
+        padding:
+            0;
+
+        border:
+            0;
+
+        background:
+            transparent;
+
+    }
+
+
+    .mobile-menu-button span {
+
+        display:
+            block;
+
+        width:
+            24px;
+
+        height:
+            2px;
+
+        margin:
+            5px auto;
+
+        background:
+            var(--navy);
+
+    }
+
+
+    .site-navigation {
+
+        position:
+            absolute;
+
+        top:
+            100%;
+
+        right:
+            0;
+
+        left:
+            0;
+
+        display:
+            none;
+
+        flex-direction:
+            column;
+
+        gap:
+            0;
+
+        padding:
+            18px;
+
+        background:
+            var(--ivory);
+
+        box-shadow:
+            0 20px 50px
+            rgba(16, 32, 51, 0.15);
+
+    }
+
+
+    .site-navigation.open {
+
+        display:
+            flex;
+
+    }
+
+
+    .site-navigation a {
+
+        padding:
+            14px;
+
+    }
+
+
+    .site-navigation a::after {
+
+        display:
+            none;
+
+    }
+
+
+    .chapters-hero {
+
+        padding:
+            100px 20px;
+
+    }
+
+
+    .reading-intro,
+    .contents-section {
+
+        padding:
+            80px 20px;
+
+    }
+
+
+    .reading-note {
+
+        padding:
+            100px 20px;
+
+    }
+
+
+    .chapters-closing {
+
+        padding:
+            90px 20px;
+
+    }
+
+
+    .contents-item {
+
+        grid-template-columns:
+            45px
+            1fr
+            25px;
+
+        gap:
+            12px;
+
+        min-height:
+            110px;
+
+    }
+
+
+    .footer-bottom-inner {
+
+        flex-direction:
+            column;
+
+        justify-content:
+            center;
+
+        padding:
+            18px 0;
+
+        text-align:
+            center;
+
+    }
+
+}
