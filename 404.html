@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>
+    Page Not Found | Alone at the Altar
+</title>
+<link
+    rel="stylesheet"
+    href="landing.css">
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet">
+<style>
+/* ======================================================
+404 PAGE
+====================================================== */
+.error-page {
+    min-height:
+        calc(100vh - 92px);
+    display:
+        flex;
+    align-items:
+        center;
+    justify-content:
+        center;
+    padding:
+        100px 30px;
+    overflow:
+        hidden;
+    background:
+        var(--navy);
+    text-align:
+        center;
+}
+.error-page-inner {
+    position:
+        relative;
+    width:
+        min(760px, 100%);
+    z-index:
+        1;
+}
+.error-page::before {
+    content:
+        "";
+    position:
+        absolute;
+    width:
+        700px;
+    height:
+        700px;
+    top:
+        -430px;
+    left:
+        50%;
+    border:
+        1px solid rgba(212, 183, 126, 0.14);
+    border-radius:
+        50%;
+    transform:
+        translateX(-50%);
+}
+.error-page::after {
+    content:
+        "";
+    position:
+        absolute;
+    width:
+        460px;
+    height:
+        460px;
+    right:
+        -250px;
+    bottom:
+        -280px;
+    border:
+        1px solid rgba(212, 183, 126, 0.1);
+    border-radius:
+        50%;
+}
+.error-number {
+    margin:
+        0 0 18px;
+    color:
+        var(--gold);
+    font-family:
+        "Cormorant Garamond",
+        serif;
+    font-size:
+        clamp(7rem, 18vw, 13rem);
+    font-weight:
+        500;
+    line-height:
+        0.75;
+    letter-spacing:
+        -0.07em;
+}
+.error-page .eyebrow {
+    color:
+        var(--gold-light);
+}
+.error-page h1 {
+    margin:
+        0;
+    color:
+        var(--white);
+    font-family:
+        "Cormorant Garamond",
+        serif;
+    font-size:
+        clamp(3.2rem, 6vw, 6rem);
+    font-weight:
+        500;
+    line-height:
+        0.95;
+    letter-spacing:
+        -0.04em;
+}
+.error-line {
+    display:
+        flex;
+    justify-content:
+        center;
+    margin:
+        38px 0;
+}
+.error-line span {
+    width:
+        70px;
+    height:
+        1px;
+    background:
+        var(--gold);
+}
+.error-page p {
+    max-width:
+        570px;
+    margin:
+        0 auto;
+    color:
+        rgba(255, 255, 255, 0.7);
+    font-size:
+        1rem;
+}
+.error-actions {
+    display:
+        flex;
+    flex-wrap:
+        wrap;
+    justify-content:
+        center;
+    gap:
+        15px;
+    margin-top:
+        42px;
+}
+.error-actions .button-outline {
+    color:
+        var(--white);
+    border-color:
+        rgba(255, 255, 255, 0.35);
+}
+.error-actions .button-outline:hover {
+    background:
+        var(--white);
+    color:
+        var(--navy);
+    border-color:
+        var(--white);
+}
+@media screen and (max-width: 700px) {
+    .error-page {
+        min-height:
+            calc(100vh - 78px);
+        padding:
+            80px 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .error-actions {
+        flex-direction:
+            column;
+        align-items:
+            stretch;
+    }
+    .error-actions .button {
+        width:
+            100%;
+    }
+}
+</style>
+</head>
+<body>
+<!-- ======================================================
+HEADER
+====================================================== -->
+<header class="site-header">
+<div class="header-inner">
+    <a
+        href="index.html"
+        class="site-brand"
+        aria-label="Alone at the Altar Home">
+        <span class="brand-title">
+            Alone
+            <small>at the</small>
+            <strong>Altar</strong>
+        </span>
+        <span class="brand-subtitle">
+            The Prayers Nobody Heard and the God Who Did
+        </span>
+    </a>
+    <button
+        class="mobile-menu-button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="site-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav
+        id="site-navigation"
+        class="site-navigation">
+        <a href="index.html">
+            Home
+        </a>
+        <a href="story.html">
+            The Story
+        </a>
+        <a href="book.html">
+            The Book
+        </a>
+        <a href="chapters.html">
+            Chapters
+        </a>
+        <a href="author.html">
+            Author
+        </a>
+        <a href="contact.html">
+            Contact
+        </a>
+    </nav>
+    <a
+        href="introduction.html"
+        class="header-button">
+        Begin Reading
+    </a>
+</div>
+</header>
+<main>
+<!-- ======================================================
+404
+====================================================== -->
+<section class="error-page">
+<div class="error-page-inner">
+    <div class="error-number">
+        404
+    </div>
+    <span class="eyebrow">
+        Page Not Found
+    </span>
+    <h1>
+        You May Have Taken
+        <br>
+        a Wrong Turn.
+    </h1>
+    <div class="error-line">
+        <span></span>
+    </div>
+    <p>
+        The page you were looking for is not here, but you can always
+        return to the beginning of the story.
+    </p>
+    <div class="error-actions">
+        <a
+            href="index.html"
+            class="button button-gold">
+            Return Home
+        </a>
+        <a
+            href="introduction.html"
+            class="button button-outline">
+            Begin Reading
+        </a>
+    </div>
+</div>
+</section>
+</main>
+<script>
+const menuButton =
+    document.querySelector(".mobile-menu-button");
+const navigation =
+    document.querySelector(".site-navigation");
+menuButton.addEventListener(
+    "click",
+    function () {
+        navigation.classList.toggle("open");
+        menuButton.classList.toggle("open");
+        const expanded =
+            menuButton.getAttribute("aria-expanded") === "true";
+        menuButton.setAttribute(
+            "aria-expanded",
+            !expanded
+        );
+    }
+);
+</script>
+</body>
+</html>
