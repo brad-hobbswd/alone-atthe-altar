@@ -20,9 +20,6 @@
     rel="stylesheet">
 </head>
 <body>
-<!-- ======================================================
-HEADER
-====================================================== -->
 <header class="site-header">
 <div class="header-inner">
     <a
@@ -79,93 +76,89 @@ HEADER
 </div>
 </header>
 <main>
-<!-- ======================================================
+<!-- =====================================================
 CONTACT HERO
-====================================================== -->
+===================================================== -->
 <section class="contact-hero">
 <div class="contact-hero-inner">
     <span class="eyebrow">
         Get in Touch
     </span>
     <h1>
-        Sometimes
+        Let’s
         <br>
-        a Story
-        <br>
-        Starts a Conversation.
+        Connect.
     </h1>
-    <div class="hero-line">
+    <div class="hero-divider">
         <span></span>
     </div>
-    <p>
-        Whether you have a question about the book, want to share what
-        the story meant to you, or simply want to reach out, you are
-        welcome here.
+    <p class="contact-hero-subtitle">
+        Some stories are meant to be told.
+        Some conversations are meant to begin.
     </p>
 </div>
 </section>
-<!-- ======================================================
+<!-- =====================================================
 CONTACT INTRODUCTION
-====================================================== -->
+===================================================== -->
 <section class="contact-introduction">
 <div class="section-shell contact-introduction-grid">
     <div class="contact-introduction-title">
         <span class="eyebrow">
-            A Personal Connection
+            A Personal Message
         </span>
         <h2>
-            I Would
+            Thank You
             <br>
-            Love to
-            <br>
-            Hear From You.
+            for Being Here.
         </h2>
     </div>
     <div class="contact-introduction-content">
         <p>
+            Writing
             <strong>
                 Alone at the Altar
             </strong>
-            was written from a deeply personal place, and I understand
-            that stories like this can sometimes touch places inside us
-            that are difficult to explain.
+            meant sharing parts of my life that were not always easy
+            to put into words.
         </p>
         <p>
-            If something in this story connected with you, you are
-            welcome to share that with me.
+            If something in this story connected with you, encouraged
+            you, or reminded you that you are not alone in what you
+            are carrying, I would genuinely love to hear from you.
         </p>
         <p>
-            You may have a question, a personal reflection, or a story
-            of your own. Whatever the reason, thank you for taking the
-            time to reach out.
+            Your story matters too.
         </p>
     </div>
 </div>
 </section>
-<!-- ======================================================
-CONTACT FORM
-====================================================== -->
+<!-- =====================================================
+CONTACT SECTION
+===================================================== -->
 <section class="contact-section">
 <div class="section-shell contact-grid">
-    <div class="contact-details">
+    <div class="contact-information">
         <span class="eyebrow">
-            Contact Bradley Hobbs
+            Contact Bradley
         </span>
         <h2>
-            Leave a Message.
+            Leave a
+            <br>
+            Message.
         </h2>
         <p>
-            Please use the form to send your message. I appreciate
-            every person who takes the time to connect.
+            Whether you are responding to the book, sharing part of
+            your own story, asking a question, or simply wanting to
+            connect, you are welcome here.
         </p>
         <div class="contact-note">
             <span>
-                Please Note
+                A Note
             </span>
             <p>
-                Messages are read personally. Because of the volume of
-                messages and personal responsibilities, a response may
-                not always be immediate.
+                Please remember that messages may take a little time to
+                receive a response. Every message is appreciated.
             </p>
         </div>
     </div>
@@ -205,8 +198,7 @@ CONTACT FORM
                 <input
                     type="text"
                     id="subject"
-                    name="subject"
-                    required>
+                    name="subject">
             </div>
             <div class="form-group">
                 <label for="message">
@@ -221,29 +213,56 @@ CONTACT FORM
             <button
                 type="submit"
                 class="button button-gold">
-                Send Message
+                Send Your Message
             </button>
         </form>
     </div>
 </div>
 </section>
-<!-- ======================================================
+<!-- =====================================================
+WHY REACH OUT
+===================================================== -->
+<section class="conversation-section">
+<div class="conversation-overlay">
+    <div class="conversation-inner">
+        <span class="eyebrow">
+            The Conversation
+        </span>
+        <h2>
+            You Never Know
+            <br>
+            Who Needs to Hear
+            <br>
+            Your Story Too.
+        </h2>
+        <p>
+            Sometimes the thing we thought we had to carry quietly
+            becomes the very thing that helps someone else realize
+            they are not alone.
+        </p>
+    </div>
+</div>
+</section>
+<!-- =====================================================
 READ THE STORY
-====================================================== -->
+===================================================== -->
 <section class="contact-reading">
-<div class="contact-reading-inner">
+<div class="section-shell contact-reading-inner">
     <span class="eyebrow">
-        Before You Go
+        Begin Here
     </span>
     <h2>
-        The Story
+        Before You Go,
         <br>
-        Is Waiting.
+        There Is a Story
+        <br>
+        Waiting for You.
     </h2>
     <p>
-        The prayers nobody heard.
-        The things I could not hold together.
-        The God who was there through it all.
+        Alone at the Altar begins with a song, but it is ultimately
+        a story about the places where life becomes difficult, the
+        things we cannot hold together alone, and the God who remains
+        present through all of it.
     </p>
     <div class="contact-reading-actions">
         <a
@@ -254,15 +273,12 @@ READ THE STORY
         <a
             href="book.html"
             class="button button-outline">
-            Discover the Book
+            Explore the Book
         </a>
     </div>
 </div>
 </section>
 </main>
-<!-- ======================================================
-FOOTER
-====================================================== -->
 <footer class="site-footer">
 <div class="footer-main section-shell">
     <div class="footer-brand">
@@ -333,7 +349,6 @@ menuButton.addEventListener(
     "click",
     function () {
         navigation.classList.toggle("open");
-        menuButton.classList.toggle("open");
         const expanded =
             menuButton.getAttribute("aria-expanded") === "true";
         menuButton.setAttribute(
