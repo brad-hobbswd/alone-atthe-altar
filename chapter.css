@@ -1561,3 +1561,15 @@ shows the reader where they are in the book.
         grid-row: 2;
     }
 }
+
+
+/* Chapter Three reading size adjustment */
+.chapter-three-content .chapter-reading-shell p {
+    font-size: clamp(1.4rem, 2.25vw, 1.65rem);
+}
+
+@media (max-width: 800px) {
+    .chapter-three-content .chapter-reading-shell p {
+        font-size: 1.38rem;
+    }
+}
