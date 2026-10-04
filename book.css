@@ -1571,6 +1571,306 @@ TABLET
 
 
 /* =========================================================
+IPAD / TABLET PORTRAIT
+========================================================= */
+
+@media (min-width: 801px) and (max-width: 1000px) {
+
+    /*
+       iPad portrait needs the mobile-style navigation because
+       the full desktop navigation becomes cramped at this width.
+       The page content itself remains in the tablet layout.
+    */
+
+    .header-inner {
+
+        width:
+            min(100% - 30px, 1500px);
+
+        min-height:
+            78px;
+
+    }
+
+
+    .header-button {
+
+        display:
+            none;
+
+    }
+
+
+    .mobile-menu-button {
+
+        display:
+            block;
+
+        width:
+            44px;
+
+        height:
+            44px;
+
+        margin-left:
+            auto;
+
+        padding:
+            0;
+
+        border:
+            0;
+
+        background:
+            transparent;
+
+        cursor:
+            pointer;
+
+    }
+
+
+    .mobile-menu-button span {
+
+        display:
+            block;
+
+        width:
+            24px;
+
+        height:
+            2px;
+
+        margin:
+            5px auto;
+
+        background:
+            var(--navy);
+
+    }
+
+
+    .mobile-menu-button.open span:nth-child(1) {
+
+        transform:
+            translateY(7px)
+            rotate(45deg);
+
+    }
+
+
+    .mobile-menu-button.open span:nth-child(2) {
+
+        opacity:
+            0;
+
+    }
+
+
+    .mobile-menu-button.open span:nth-child(3) {
+
+        transform:
+            translateY(-7px)
+            rotate(-45deg);
+
+    }
+
+
+    .site-navigation {
+
+        position:
+            absolute;
+
+        top:
+            100%;
+
+        right:
+            0;
+
+        left:
+            0;
+
+        display:
+            none;
+
+        flex-direction:
+            column;
+
+        gap:
+            0;
+
+        padding:
+            18px;
+
+        background:
+            var(--ivory);
+
+        box-shadow:
+            var(--shadow);
+
+    }
+
+
+    .site-navigation.open {
+
+        display:
+            flex;
+
+    }
+
+
+    .site-navigation a {
+
+        padding:
+            14px;
+
+    }
+
+
+    .site-navigation a::after {
+
+        display:
+            none;
+
+    }
+
+
+    .book-hero {
+
+        padding:
+            82px 28px;
+
+    }
+
+
+    .book-hero-inner {
+
+        gap:
+            55px;
+
+    }
+
+
+    .book-cover {
+
+        width:
+            min(100%, 340px);
+
+    }
+
+
+    .book-hero-content {
+
+        max-width:
+            720px;
+
+        margin:
+            0 auto;
+
+    }
+
+
+    .book-hero-content h1 {
+
+        font-size:
+            clamp(4rem, 9vw, 6.5rem);
+
+    }
+
+
+    .book-tagline {
+
+        max-width:
+            620px;
+
+        margin-right:
+            auto;
+
+        margin-left:
+            auto;
+
+    }
+
+
+    .book-actions {
+
+        justify-content:
+            center;
+
+    }
+
+
+    .book-introduction {
+
+        padding:
+            95px 0;
+
+    }
+
+
+    .book-introduction-grid {
+
+        gap:
+            45px;
+
+    }
+
+
+    .book-introduction-title h2 {
+
+        max-width:
+            700px;
+
+    }
+
+
+    .book-introduction-content {
+
+        max-width:
+            720px;
+
+    }
+
+
+    .book-is-section,
+    .reading-journey {
+
+        padding:
+            95px 0;
+
+    }
+
+
+    .theme-card {
+
+        min-height:
+            285px;
+
+        padding:
+            32px;
+
+    }
+
+
+    .author-message-overlay {
+
+        padding:
+            90px 28px;
+
+    }
+
+
+    .journey-button-wrap {
+
+        margin-top:
+            42px;
+
+    }
+
+}
+
+ 
+/* =========================================================
 MOBILE
 ========================================================= */
 
