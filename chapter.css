@@ -1516,19 +1516,19 @@ shows the reader where they are in the book.
 }
 
 .reading-progress.progress-chapter-one .progress-line span {
-    width: 20%;
-}
-
-.reading-progress.progress-chapter-two .progress-line span {
     width: 40%;
 }
 
-.reading-progress.progress-chapter-three .progress-line span {
+.reading-progress.progress-chapter-two .progress-line span {
     width: 60%;
 }
 
-.reading-progress.progress-chapter-four .progress-line span {
+.reading-progress.progress-chapter-three .progress-line span {
     width: 80%;
+}
+
+.reading-progress.progress-chapter-four .progress-line span {
+    width: 100%;
 }
 
 .reading-progress.progress-complete .progress-line span {
