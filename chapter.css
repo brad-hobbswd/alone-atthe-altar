@@ -1596,3 +1596,19 @@ shows the reader where they are in the book.
 
 
 
+
+
+/* Chapter Three body text: match the other chapter reading pages */
+.chapter-three-content > p,
+.chapter-three-content .chapter-reading-shell > p {
+    font-size: clamp(1.35rem, 2vw, 1.65rem) !important;
+    line-height: 1.65 !important;
+}
+
+@media (max-width: 800px) {
+    .chapter-three-content > p,
+    .chapter-three-content .chapter-reading-shell > p {
+        font-size: 1.35rem !important;
+        line-height: 1.65 !important;
+    }
+}
