@@ -224,3 +224,28 @@ SHARED SITE NAVIGATION
 .reading-navigation-center small{color:#a97932;font-family:"DM Sans",sans-serif;font-size:.55rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .reading-navigation-back:hover strong,.reading-navigation-next:hover strong{color:#a97932}
 @media (max-width:700px){.reading-navigation{padding:42px 20px}.reading-navigation-inner{grid-template-columns:1fr;gap:26px;text-align:center}.reading-navigation-back,.reading-navigation-next{align-items:center;text-align:center}.reading-navigation-center{order:-1}}
+
+/* =========================================================
+   SITE-WIDE FOOTER
+   Approved Alone at the Altar footer design
+   ========================================================= */
+.site-footer{background:#061624;color:#fff;width:100%}
+.site-footer .footer-main{width:min(100% - 60px,1500px);margin:0 auto;padding:92px 0 108px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0}
+.site-footer .footer-brand{display:flex;flex-direction:column;align-items:center;margin:0}
+.site-footer .footer-title{display:inline-flex;align-items:baseline;justify-content:center;gap:10px;margin:0;color:#fff;font-family:"Playfair Display",Georgia,serif;font-size:clamp(2.8rem,5vw,4.05rem);font-weight:500;line-height:1;letter-spacing:-.02em}
+.site-footer .footer-title small{color:#fff;font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1rem,1.5vw,1.45rem);font-style:normal;font-weight:400;line-height:1}
+.site-footer .footer-brand p{max-width:none;margin:30px 0 0;color:rgba(255,255,255,.68);font-family:"DM Sans",Arial,sans-serif;font-size:.88rem;font-weight:700;letter-spacing:.18em;line-height:1.5;text-transform:uppercase}
+.site-footer .footer-navigation{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:34px;margin:78px 0 0;padding:0}
+.site-footer .footer-navigation a{color:rgba(255,255,255,.78);font-family:"DM Sans",Arial,sans-serif;font-size:1.05rem;font-weight:400;line-height:1;text-decoration:none;transition:color .2s ease}
+.site-footer .footer-navigation a:hover,.site-footer .footer-navigation a:focus-visible{color:#c69a52}
+.site-footer .footer-scripture{margin:86px 0 0;text-align:center}
+.site-footer .footer-scripture p{margin:0;color:rgba(255,255,255,.82);font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(1.35rem,2vw,1.75rem);font-style:italic;font-weight:400;line-height:1.25}
+.site-footer .footer-scripture span{display:block;margin-top:18px;color:#c69a52;font-family:"DM Sans",Arial,sans-serif;font-size:.95rem;font-weight:500;letter-spacing:0;text-transform:none}
+.site-footer .footer-bottom{width:100%;border-top:1px solid rgba(255,255,255,.13)}
+.site-footer .footer-bottom-inner{width:min(100% - 96px,1520px);min-height:138px;margin:0 auto;padding:0;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.site-footer .footer-bottom p{margin:0;color:rgba(255,255,255,.55);font-family:"DM Sans",Arial,sans-serif;font-size:.92rem;font-weight:400}
+.site-footer .legal-links{display:flex;align-items:center;gap:38px}
+.site-footer .legal-links a{color:rgba(255,255,255,.62);font-family:"DM Sans",Arial,sans-serif;font-size:.92rem;font-weight:400;text-decoration:none;transition:color .2s ease}
+.site-footer .legal-links a:hover,.site-footer .legal-links a:focus-visible{color:#c69a52}
+@media(max-width:900px){.site-footer .footer-main{width:min(100% - 40px,700px);padding:72px 0 82px}.site-footer .footer-navigation{gap:22px 28px;margin-top:58px}.site-footer .footer-scripture{margin-top:62px}.site-footer .footer-bottom-inner{width:min(100% - 40px,700px);min-height:110px}}
+@media(max-width:600px){.site-footer .footer-main{padding:62px 0 72px}.site-footer .footer-title{flex-wrap:wrap;gap:7px}.site-footer .footer-brand p{max-width:310px;font-size:.68rem;letter-spacing:.13em}.site-footer .footer-navigation{gap:20px 24px;margin-top:48px}.site-footer .footer-navigation a{font-size:.92rem}.site-footer .footer-scripture{margin-top:54px}.site-footer .footer-bottom-inner{min-height:auto;padding:24px 0;flex-direction:column;justify-content:center;text-align:center}.site-footer .legal-links{gap:22px}}
