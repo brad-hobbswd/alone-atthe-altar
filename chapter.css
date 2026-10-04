@@ -412,13 +412,13 @@ margin:
 .chapter-reading-shell p {
 
 margin:
-    0 0 32px;
+    0 0 30px;
 color:
     var(--ink);
 font-size:
-    clamp(1.3rem, 2.1vw, 1.55rem);
+    clamp(1.35rem, 2vw, 1.65rem);
 line-height:
-    1.7;
+    1.65;
 
 }
 
@@ -1564,17 +1564,7 @@ shows the reader where they are in the book.
 
 
 /* Chapter Three reading size adjustment */
-.chapter-three-content .chapter-reading-shell p {
-    font-size: clamp(1.4rem, 2.25vw, 1.65rem);
-}
-
-@media (max-width: 800px) {
-    .chapter-three-content .chapter-reading-shell p {
-        font-size: 1.38rem;
-    }
-}
 
 
-/* Chapter Three body text matches Chapter Four */
-.chapter-three-content p { font-size: 1.55rem !important; line-height: 1.7 !important; }
-@media (max-width: 800px) { .chapter-three-content p { font-size: 1.28rem !important; line-height: 1.65 !important; } }
+
+
