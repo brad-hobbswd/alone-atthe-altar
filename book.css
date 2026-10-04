@@ -1904,6 +1904,54 @@ IPAD / TABLET PORTRAIT
 
  
 /* =========================================================
+IPAD PORTRAIT READING JOURNEY
+========================================================= */
+
+@media (min-width: 600px) and (max-width: 800px) {
+
+    /*
+       Keep the reading journey horizontal on iPad portrait.
+       This matches the wider tablet presentation instead of
+       stacking the three reading choices vertically.
+    */
+
+    .reading-journey {
+        padding: 95px 0;
+    }
+
+    .journey-path {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .journey-step {
+        min-width: 0;
+        padding: 30px 18px;
+        gap: 14px;
+    }
+
+    .journey-step strong {
+        font-size: 1.55rem;
+    }
+
+    .journey-step div span {
+        font-size: 0.95rem;
+    }
+
+    .journey-line {
+        width: 1px;
+        height: auto;
+        flex: 0 0 1px;
+    }
+
+    .journey-button-wrap {
+        margin-top: 42px;
+    }
+
+}
+
+
+/* =========================================================
 MOBILE
 ========================================================= */
 
