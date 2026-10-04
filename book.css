@@ -1841,6 +1841,39 @@ IPAD / TABLET PORTRAIT
     }
 
 
+    /* Keep the reading journey horizontal on iPad portrait
+       so it matches the desktop layout. */
+
+    .journey-path {
+
+        flex-direction:
+            row;
+
+    }
+
+
+    .journey-line {
+
+        width:
+            1px;
+
+        height:
+            auto;
+
+    }
+
+
+    .journey-step {
+
+        min-width:
+            0;
+
+        padding:
+            30px 24px;
+
+    }
+
+
     .theme-card {
 
         min-height:
