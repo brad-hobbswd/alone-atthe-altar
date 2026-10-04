@@ -1470,3 +1470,94 @@ text-align:
 
 
 
+
+
+/* =========================================================
+READING PROGRESS
+Matches the Introduction reading indicator so every chapter
+shows the reader where they are in the book.
+========================================================= */
+
+.reading-progress {
+    padding: 0 24px;
+    background: var(--navy);
+}
+
+.reading-progress-inner {
+    width: min(1320px, 100%);
+    min-height: 106px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(180px, 1fr) auto;
+    align-items: center;
+    gap: 38px;
+}
+
+.reading-progress-inner > span {
+    color: rgba(255, 255, 255, 0.72);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.progress-line {
+    position: relative;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.22);
+}
+
+.progress-line span {
+    display: block;
+    height: 2px;
+    background: var(--gold-light);
+}
+
+.reading-progress.progress-chapter-one .progress-line span {
+    width: 20%;
+}
+
+.reading-progress.progress-chapter-two .progress-line span {
+    width: 40%;
+}
+
+.reading-progress.progress-chapter-three .progress-line span {
+    width: 60%;
+}
+
+.reading-progress.progress-chapter-four .progress-line span {
+    width: 80%;
+}
+
+.reading-progress.progress-complete .progress-line span {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .reading-progress {
+        padding: 0 18px;
+    }
+
+    .reading-progress-inner {
+        min-height: 78px;
+        grid-template-columns: 1fr auto;
+        gap: 12px 20px;
+    }
+
+    .reading-progress-inner > span:first-child {
+        grid-column: 1;
+    }
+
+    .reading-progress-inner > span:last-child {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    .progress-line {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+}
