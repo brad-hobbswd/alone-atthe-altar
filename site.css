@@ -157,8 +157,8 @@ SHARED SITE NAVIGATION
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* iPad portrait and smaller tablet */
-@media (max-width: 1100px) {
+/* Phones and small screens only */
+@media (max-width: 800px) {
     .header-inner {
         width: min(100% - 30px, 1500px);
         min-height: 78px;
@@ -201,10 +201,6 @@ SHARED SITE NAVIGATION
 }
 
 @media (max-width: 800px) {
-    .header-inner {
-        min-height: 74px;
-    }
-
     .brand-title {
         font-size: 1.55rem;
     }
