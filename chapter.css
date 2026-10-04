@@ -1505,13 +1505,14 @@ shows the reader where they are in the book.
 
 .progress-line {
     position: relative;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.22);
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .progress-line span {
     display: block;
-    height: 2px;
+    height: 1px;
     background: var(--gold-light);
 }
 
